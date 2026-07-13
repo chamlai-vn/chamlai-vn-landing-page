@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChậmLại — Demo AI phát hiện lừa đảo</title>
+  <meta name="description" content="Dán tin nhắn, email hoặc nội dung cuộc gọi đáng ngờ — AI phân tích và cảnh báo rủi ro lừa đảo dựa trên 124 kịch bản phổ biến tại Việt Nam. Demo dự án, miễn phí, không cần đăng nhập.">
+  <meta name="theme-color" content="#a9612e">
+  <link rel="canonical" href="https://chamlai.vn/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="ChậmLại — Demo AI phát hiện lừa đảo">
+  <meta property="og:description" content="AI phân tích tin nhắn/email/cuộc gọi đáng ngờ và cảnh báo rủi ro lừa đảo dựa trên 124 kịch bản phổ biến tại Việt Nam.">
+  <meta property="og:url" content="https://chamlai.vn/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" type="module" defer></script>
+</head>
+<body>
+
+  <header class="site-header container">
+    <div class="site-header__brand">
+      <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="21" cy="22" r="12" fill="oklch(0.62 0.15 42)"></circle>
+        <circle cx="9" cy="16" r="5" fill="oklch(0.5 0.14 40)"></circle>
+        <circle cx="11" cy="30" r="3.6" fill="oklch(0.5 0.14 40)"></circle>
+        <circle cx="26" cy="32" r="3.6" fill="oklch(0.5 0.14 40)"></circle>
+        <circle cx="17.5" cy="19" r="1.6" fill="oklch(0.97 0.01 70)"></circle>
+      </svg>
+      <span class="site-header__brand-name">ChậmLại</span>
+    </div>
+    <a data-link="cta" href="#" class="btn-outline">Dùng thử demo</a>
+  </header>
+
+  <section class="hero container">
+    <div class="hero__content">
+      <span class="eyebrow">Demo dự án · RAG Chatbot</span>
+      <h1 class="hero__title">ChậmLại.</h1>
+      <p class="hero__subtitle">Dán đoạn tin nhắn, email hoặc nội dung cuộc gọi đáng ngờ — AI phân tích và đưa ra cảnh báo rủi ro lừa đảo chỉ trong vài giây, dựa trên 124 kịch bản phổ biến tại Việt Nam.</p>
+      <div class="hero__actions">
+        <a data-link="cta" href="#" class="btn-primary">Dùng thử demo <span aria-hidden="true">→</span></a>
+        <span class="hero__hint">Không cần đăng nhập · Miễn phí</span>
+      </div>
+    </div>
+
+    <div class="hero__mockup-wrap">
+      <div class="mockup-card">
+        <div class="mockup-card__header">
+          <span class="mockup-card__title">Kiểm tra nội dung</span>
+          <span class="badge">Demo</span>
+        </div>
+        <div class="mockup-card__input">"Chúc mừng! Số điện thoại của bạn đã trúng thưởng 50.000.000đ. Vui lòng chuyển phí nhận thưởng 500.000đ để xác nhận..."</div>
+        <div class="mockup-card__status">
+          <span class="mockup-card__status-tick"></span>
+          AI đang phân tích
+        </div>
+        <div class="mockup-card__result">
+          <span class="mockup-card__result-dot"></span>
+          <div class="mockup-card__result-text">
+            <span class="mockup-card__result-title">Cẩn trọng — có dấu hiệu lừa đảo</span>
+            <span class="mockup-card__result-desc">Yêu cầu chuyển tiền trước để nhận thưởng là dấu hiệu phổ biến.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <h2 class="section-heading__title">Hoạt động như thế nào</h2>
+      <p class="section-heading__subtitle">Ba bước đơn giản, không cần kiến thức kỹ thuật.</p>
+    </div>
+    <div class="steps">
+
+      <div class="step">
+        <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><rect x="1" y="1" width="42" height="42" rx="13" fill="oklch(0.93 0.03 45)"></rect><rect x="15" y="12" width="14" height="20" rx="3" fill="none" stroke="oklch(0.5 0.14 40)" stroke-width="2"></rect><rect x="18.5" y="9" width="7" height="5" rx="1.5" fill="oklch(0.5 0.14 40)"></rect></svg>
+        <h3 class="step__title">1. Dán văn bản</h3>
+        <p class="step__desc">Copy đoạn tin nhắn, email hoặc nội dung cuộc gọi bạn nghi ngờ vào ô nhập.</p>
+      </div>
+
+      <div class="step">
+        <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><rect x="1" y="1" width="42" height="42" rx="13" fill="oklch(0.93 0.03 45)"></rect><circle cx="19" cy="19" r="8" fill="none" stroke="oklch(0.5 0.14 40)" stroke-width="2"></circle><line x1="25" y1="25" x2="32" y2="32" stroke="oklch(0.5 0.14 40)" stroke-width="2.4" stroke-linecap="round"></line></svg>
+        <h3 class="step__title">2. AI phân tích</h3>
+        <p class="step__desc">Hệ thống đối chiếu nội dung với 124 kịch bản lừa đảo thường gặp.</p>
+      </div>
+
+      <div class="step">
+        <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><rect x="1" y="1" width="42" height="42" rx="13" fill="oklch(0.93 0.03 45)"></rect><circle cx="22" cy="13.5" r="3.2" fill="oklch(0.56 0.19 25)"></circle><circle cx="22" cy="22" r="3.2" fill="oklch(0.75 0.15 78)"></circle><circle cx="22" cy="30.5" r="3.2" fill="oklch(0.68 0.14 145)"></circle></svg>
+        <h3 class="step__title">3. Nhận cảnh báo</h3>
+        <p class="step__desc">Kết quả hiển thị bằng đèn đỏ/vàng/xanh kèm giải thích dễ hiểu.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="traffic-light">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="section-heading__title">Đọc kết quả trong 3 màu</h2>
+        <p class="section-heading__subtitle">Không thuật ngữ phức tạp — chỉ một màu đèn và một câu giải thích.</p>
+      </div>
+      <div class="verdict-grid">
+
+        <div class="verdict-card verdict-card--red">
+          <span class="verdict-card__dot"></span>
+          <h3 class="verdict-card__title">Đỏ · Nguy hiểm cao</h3>
+          <p class="verdict-card__desc">Có dấu hiệu lừa đảo rõ ràng. Không phản hồi, chuyển tiền hay cung cấp thông tin cá nhân.</p>
+        </div>
+
+        <div class="verdict-card verdict-card--amber">
+          <span class="verdict-card__dot"></span>
+          <h3 class="verdict-card__title">Vàng · Cẩn trọng</h3>
+          <p class="verdict-card__desc">Có vài dấu hiệu đáng ngờ. Nên xác minh lại qua kênh chính thức trước khi hành động.</p>
+        </div>
+
+        <div class="verdict-card verdict-card--green">
+          <span class="verdict-card__dot"></span>
+          <h3 class="verdict-card__title">Xanh · An toàn</h3>
+          <p class="verdict-card__desc">Không phát hiện dấu hiệu lừa đảo rõ ràng trong nội dung được cung cấp.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="trust-card">
+      <h2 class="trust-card__title">Cần biết trước khi dùng</h2>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <h3 class="trust-item__title">Chỉ mang tính tham khảo</h3>
+          <p class="trust-item__desc">Kết quả do AI tạo ra và có thể sai. Đây không phải lời khuyên chính thức.</p>
+        </div>
+        <div class="trust-item">
+          <h3 class="trust-item__title">Không thay tư vấn pháp lý/công an</h3>
+          <p class="trust-item__desc">Nếu nghi ngờ bị lừa đảo, hãy liên hệ cơ quan công an hoặc ngân hàng của bạn.</p>
+        </div>
+        <div class="trust-item">
+          <h3 class="trust-item__title">Không thu thập dữ liệu cá nhân</h3>
+          <p class="trust-item__desc">Nội dung bạn dán vào không được lưu trữ hay dùng cho mục đích khác.</p>
+        </div>
+        <div class="trust-item">
+          <h3 class="trust-item__title">Không cần đăng nhập</h3>
+          <p class="trust-item__desc">Dùng thử ngay — không tài khoản, không mật khẩu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer container">
+    <div class="site-footer__brand">
+      <div class="site-footer__brand-row">
+        <svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><circle cx="21" cy="22" r="12" fill="oklch(0.62 0.15 42)"></circle><circle cx="9" cy="16" r="5" fill="oklch(0.5 0.14 40)"></circle><circle cx="11" cy="30" r="3.6" fill="oklch(0.5 0.14 40)"></circle><circle cx="26" cy="32" r="3.6" fill="oklch(0.5 0.14 40)"></circle><circle cx="17.5" cy="19" r="1.6" fill="oklch(0.97 0.01 70)"></circle></svg>
+        <span class="site-footer__brand-name">ChậmLại</span>
+      </div>
+      <p class="site-footer__tagline">Demo chatbot RAG phát hiện kịch bản lừa đảo.</p>
+    </div>
+    <div class="site-footer__links">
+      <a data-link="github" href="#" class="site-footer__link">GitHub</a>
+      <span class="site-footer__link--disabled">Blog · sắp ra mắt</span>
+      <a data-link="contact" href="#" target="_blank" rel="noopener" class="site-footer__link">Báo lỗi / Liên hệ</a>
+    </div>
+    <div class="site-footer__credit">
+      Thiết kế &amp; phát triển bởi <a data-link="author" href="#" target="_blank" rel="noopener" class="site-footer__credit-link">Nguyễn Văn Biên</a> · Portfolio artifact — không phải sản phẩm thương mại.
+    </div>
+  </footer>
+
+</body>
+</html>

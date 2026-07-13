@@ -1,0 +1,13 @@
+{
+  "name": "chamlai-vn-landing-page",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static landing page for chamlai.vn",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npx serve ."
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
